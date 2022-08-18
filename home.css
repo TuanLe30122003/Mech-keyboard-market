@@ -261,6 +261,7 @@ a {
     align-items: center;
     border-radius: 20px;
     border: 1px solid #404245;
+    position: relative;
 }
 
 .product-card {
@@ -278,6 +279,33 @@ a {
 .cover-card h4 {
     margin-top: 15px;
     text-align: center;
+}
+
+.move {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border-radius: 40px;
+    bottom: 0;
+    transform: translateY(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.move ion-icon {
+    color: #7453fc;
+    font-weight: 700;
+}
+
+.move:hover {
+    background-color: #7453fc;
+}
+
+.move:hover ion-icon {
+    color: #fff;
 }
 
 /* --------------------------------------------------------------- */
@@ -310,6 +338,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 45px;
+    position: relative;
 }
 
 .collection-card {
@@ -378,13 +407,14 @@ a {
 .purchase-btn > span {
     position: relative;
     width: 100%;
+    font-weight: 700;
 }
 
 .purchase-btn > span:after {
     content: '';
     height: 2px;
     background-color: #fff;
-    width: 200%;
+    width: 300%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -396,3 +426,51 @@ a {
     color: #7453fc;
 }
 
+.next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    right: 0;
+    top: 50%;
+    transform: translateX(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+
+}
+
+.previous {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #fff;
+    left: 0;
+    top: 50%;
+    transform: translateX(-20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+}
+
+.next:hover {
+    background-color: #7453fc;
+    cursor: pointer;
+}
+
+.next:hover ion-icon {
+    color: #fff;
+}
+
+.previous:hover {
+    background-color: #7453fc;
+    cursor: pointer;
+}
+
+.previous:hover ion-icon {
+    color: #fff;
+}
