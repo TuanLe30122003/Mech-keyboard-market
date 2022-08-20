@@ -6,33 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keyboard market</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="explore.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    <!-- navigation -->
+
+    <header>
+        <div class="navigation">
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="button">
+                <ul>
+                    <li><a href="javascript:void(0)" class="nav-but" id="home">Home</a></li>
+                    <li><a href="javascript:void(0)" class="nav-but" id="explore">Explore</a></li>
+                    <li><a href="javascript:void(0)" class="nav-but">Item details</a></li>
+                    <li><a href="javascript:void(0)" class="nav-but">Owner</a></li>
+                    <li><a href="javascript:void(0)" class="nav-but">Purchase yours</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
     <!----------------------- Home stage------------------- -->
-    <div class="homestage">
+    <div class="stage" id="homestage">
         <div class="intro">
-            <!-- Navigation -->
-
-            <header>
-                    <div class="navigation">
-                        <div class="logo">
-                            <img src="logo.png" alt="">
-                        </div>
-                        <div class="button">
-                            <ul>
-                                <li><a class="active">Home</a></li>
-                                <li><a>Explore</a></li>
-                                <li><a>Item details</a></li>
-                                <li><a>Owner</a></li>
-                                <li><a>Purchase yours</a></li>
-                            </ul>
-                        </div>
-                    </div>
-            </header>
-
             <!-- Intro des -->
 
             <div class="intro-des">
@@ -42,8 +43,8 @@
                     <p>This market is a really cool and professional design for your websites. This HTML CSS template is based on Bootstrap v5 and it is designed for Mech-keyboard related web portals.</p>
                     <div class="button-2">
                         <a href="">Explore best keyboards</a>
-                        <a href="" class="active">How to build ?</a>
-                    </div>
+                        <a href="">How to build ?</a>
+                    </div>  
                 </div>
 
                 <div class="banner">
@@ -228,8 +229,89 @@
             </div>
         </div>
     </div>
+
+    <div class="stage" id="explorestage">
+        <div class="discover">
+            <div class="namedirect">
+                <div class="">
+                    <h6>Mech-keyboard market</h6>
+                    <h2>Discover some top items</h2>
+                    <p><span style="color: #8a75da;">Home ></span> Explore</p>
+                </div>
+
+                <div class="discoverPicContainer">
+                    <span class="pointer-discover pointer-discover-left">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </span>
+                    <div class="discoverPic">
+                        <img src="discoverpic1.png" alt="">
+                        <div class="des-pic-discover">
+                            <h3 style="margin-bottom: 25px;">A customed keyboard</h3>
+                            <div class="sub-des-pic-discover">
+                                    <div>
+                                        <img src="owner.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Owner name</h4>
+                                        <span style="color: #8a75da ;">@ownername</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="discoverPic">
+                        <img src="discoverpic2.png" alt="">
+                        <div class="des-pic-discover">
+                            <h3 style="margin-bottom: 25px;">A customed keyboard</h3>
+                            <div class="sub-des-pic-discover">
+                                    <div>
+                                        <img src="owner.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Owner name</h4>
+                                        <span style="color: #8a75da ;">@ownername</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="discoverPic">
+                        <img src="discoverpic3.png" alt="">
+                        <div class="des-pic-discover">
+                            <h3 style="margin-bottom: 25px;">A customed keyboard</h3>
+                            <div class="sub-des-pic-discover">
+                                    <div>
+                                        <img src="owner.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Owner name</h4>
+                                        <span style="color: #8a75da ;">@ownername</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="pointer-discover pointer-discover-right">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stage" id="itemstage">
+        2
+    </div>
+
+    <div class="stage" id="ownerstage">
+        3
+    </div>
+
+    <div class="stage" id="purchasestage">
+        4
+    </div>
 </body> 
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="main.js"></script>
 </html>

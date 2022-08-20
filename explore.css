@@ -1,0 +1,120 @@
+/* explore layout */
+
+#explorestage {
+    z-index: 4;
+}
+
+.discover {
+    background: url('bg-explore.jpg') no-repeat;
+    height: 200vh;
+    padding-top: 250px;
+    /* width: 100vw; */
+}
+
+
+
+.namedirect {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.namedirect div h6 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.namedirect div h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.namedirect div p {
+    font-size: 15px;
+}
+
+/*  */
+
+.discoverPicContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    padding: 0 12px;
+    /* margin-top: 50px; */
+    margin: 50px 20px 0 20px;
+    position: relative;
+}
+
+.discoverPicContainer > .discoverPic {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.pointer-discover {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    transition: all 0.3;
+    z-index: 4;
+}
+
+.pointer-discover ion-icon {
+    color: #000;
+}
+
+.pointer-discover-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+}
+
+.pointer-discover-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+}
+
+.pointer-discover:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+.des-pic-discover {
+    position: absolute;
+    padding: 30px 40px;
+    bottom: 30px;
+    right: -100%;
+    border: 1px solid rgba(64, 66, 69, 0.9);
+    background-color: rgba(40, 43, 47, 0.9);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.sub-des-pic-discover {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    /* margin-bottom: 15px; */
+}
+
+.discoverPic img {
+    width: 100%;
+}
+
+.discoverPic:hover .des-pic-discover{
+    right: 30px;
+    cursor: pointer;
+}
+
+.sub-des-pic-discover img {
+    border-radius: 50%;
+}
