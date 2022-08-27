@@ -1,12 +1,14 @@
 /* explore layout */
 
+/* explore */
+
 #explorestage {
     z-index: 4;
 }
 
 .discover {
     background: url('bg-explore.jpg') no-repeat;
-    height: 200vh;
+    /* height: 200vh; */
     padding-top: 250px;
     /* width: 100vw; */
 }
@@ -43,6 +45,7 @@
     /* margin-top: 50px; */
     margin: 50px 20px 0 20px;
     position: relative;
+    z-index: 5;
 }
 
 .discoverPicContainer > .discoverPic {
@@ -117,4 +120,90 @@
 
 .sub-des-pic-discover img {
     border-radius: 50%;
+}
+
+/* explore2 */
+
+.discover2 {
+    background: url('bg-explore2.jpg') no-repeat    ;
+    height: 200vh;
+    padding: 400px 0 120px 0;
+    position: relative;
+    transform: translateY(-17%);
+    /* box-sizing: content-box; */
+}
+
+.container-discover2 {
+    position: relative;
+}
+
+.cross {
+    position: absolute;
+    height: 2px;
+    top: 26%;
+    width: 100px;
+    left: 15%;
+    /* transform: translateY(-50%); */
+    background-color: #7453fc;
+}
+
+/* searching */
+
+.searching {
+    display: flex;
+    flex-direction: row;
+    /* padding: 0 30px; */
+    /* max-width: 1140px; */
+    margin: 0 70px;
+    padding: 0 12px;
+}
+
+.searching > div {
+    padding: 0 12px; 
+}
+
+.searching1 {
+    color: #fff;
+    font-size: 27px;
+    margin-bottom: 80px;
+    font-weight: 700;
+    flex-basis: 50%;
+    justify-content: left;
+    text-align: left;
+}
+.searching1 p {
+    margin-top: 10px;
+}
+
+.searching2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.searching2 div{
+    padding: 10px 15px 0 15px;
+    /* overflow: hidden; */
+    border-radius: 23px;
+    height: 46px;
+}
+
+.searching2 div input {
+    height: 46px;
+    border-radius: 23px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ccc;
+    outline: none; 
+}
+
+.searching2 div input:focus {
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+/* product-discover2 */
+
+.product-discover2 {
+    display: flex;
+    flex-direction: column;
 }

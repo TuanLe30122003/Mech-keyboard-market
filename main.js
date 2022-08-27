@@ -50,29 +50,5 @@ explore.onclick = function() {
 }
 
 
-// --------------------Hover effect repeat :)) -------------------------------
-// Hiện tại là đ làm dc cái kiểu này vì nó chồng chéo chau vcl :))
-// Home
 
-// home.onmouseover = function() {
-//     document.getElementById('home').style.backgroundColor = "#7453fc";
-//     document.getElementById('home').style.color = "#fff";
-// }
-
-// home.onmouseout = function () {
-//     document.getElementById('home').style.backgroundColor = "#fff";
-//     document.getElementById('home').style.color = "#7453fc";
-// }
-
-// // explore 
-
-// explore.onmouseover = function() {
-//     document.getElementById('explore').style.backgroundColor = "#7453fc";
-//     document.getElementById('explore').style.color = "#fff";
-// }
-
-// explore.onmouseout = function () {
-//     document.getElementById('explore').style.backgroundColor = "#fff";
-//     document.getElementById('explore').style.color = "#7453fc";
-// }
 
