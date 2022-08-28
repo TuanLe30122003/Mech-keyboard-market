@@ -181,11 +181,12 @@
     gap: 10px;
 }
 
-.searching2 div{
+.searching2 > div{
     padding: 10px 15px 0 15px;
     /* overflow: hidden; */
     border-radius: 23px;
     height: 46px;
+    position: relative;
 }
 
 .searching2 div input {
@@ -198,15 +199,109 @@
     outline: none; 
 }
 
-.searching2 div input:focus {
+.choiceBox {
+    height: 46px;
+    border-radius: 23px;
+    padding: 8px 16px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ccc;
+    font-size: 12px;
+    width: 200px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.summit {
+    height: 46px;
+    border-radius: 23px;
+    padding: 8px 25px!important;
+    background-color: #7453fc;
+    color: #fff;
+    border: 1px solid #ccc;
+    transform: translateY(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.summit:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    background-color: #fff;
+}
+
+.summit > span {
+
+}
+
+.summit:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #7453fc;
+}
+
+.shadow {
     box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
 }
+
+.searching2 div ion-icon{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    color: #fff;
+    transform: translateY(2px);
+}
+.searching2 div ion-icon:hover {
+    cursor: pointer;
+}
+
+.choice {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    color: #fff;
+    position: absolute;
+    width: 87%;
+    padding: 4px 4px;
+    border-radius: 23px;
+    top: 130%;
+    font-size: 12px;
+    z-index: 5; 
+    /* display: none; */
+}
+
+.unable {
+    display: none;
+}
+
+.choice li {
+    padding: 12px;
+    border-radius: 23px;
+}
+
+.choice li:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #7453fc  ;
+}
+
 /* product-discover2 */
 
 .product-discover2 {
     display: flex;
     flex-direction: column;
-    margin: 0 70px;
+    margin: 50px 70px 0 70px; 
     padding: 0 12px;
 }
 
@@ -230,7 +325,7 @@
     transform: translate(-50%, 50%);
     background-color: #7453fc;
     border-radius: 25px;
-
+    transition: all 0.5s;
 }
 
 .boxButton div{
@@ -314,6 +409,12 @@
     width: 50px;
     height: 50px;
     border-radius: 50px;
+}
+
+.boxButton:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #7453fc;
 }
 
 
