@@ -4,6 +4,7 @@
 
 #explorestage {
     z-index: 4;
+    display: none;
 }
 
 .discover {
@@ -242,13 +243,17 @@
     background-color: #fff;
 }
 
-.summit > span {
-
+.summit > a {
+    color: #fff;
 }
 
 .summit:hover {
     cursor: pointer;
     background-color: #fff;
+    color: #7453fc;
+}
+
+.summit:hover a {
     color: #7453fc;
 }
 
