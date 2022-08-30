@@ -59,6 +59,7 @@
 
 .db {
     position: relative;
+    transition: all 0.5s;
 }
 
 .db:after {

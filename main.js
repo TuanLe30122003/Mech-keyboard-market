@@ -1,6 +1,27 @@
 const home = document.querySelector('#home');
 const explore = document.querySelector('#explore');
 const item = document.querySelector('#item');
+const owner = document.querySelector('#owner');
+
+owner.onclick = function(e) {
+    var stagee = document.getElementsByClassName('stage');
+
+    for(let i=0; i < stagee.length; i++) {
+        stagee[i].style.display = "none";
+    }
+
+    document.getElementById('ownerstage').style.display = "block";
+
+    var buttonn = document.getElementsByClassName('nav-but');
+    for(let i=0; i < buttonn.length; i++){
+        buttonn[i].style.backgroundColor = "#fff";
+        buttonn[i].style.color = "#7453fc";
+    }
+    document.getElementById('owner').style.backgroundColor = "#7453fc"; 
+    document.getElementById('owner').style.color = "#fff";
+
+    window.scrollTo(0, 0);
+}
 
 item.onclick = function() {
     var stagee = document.getElementsByClassName('stage');
@@ -20,7 +41,6 @@ item.onclick = function() {
     document.getElementById('item').style.color = "#fff";
 
     window.scrollTo(0, 0);
-
 }
 
 home.onclick = function() {
@@ -66,9 +86,6 @@ explore.onclick = function() {
     window.scrollTo(0, 0);
 
 }
-
-home.click();
-
 
 const cateIcon = document.querySelector('.cate div ion-icon');
 const availableIcon = document.querySelector('.available div ion-icon');
@@ -153,3 +170,6 @@ for(var i=0; i<contentChoice.length; i++){
         
     }
 }
+
+home.click();
+

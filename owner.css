@@ -1,0 +1,158 @@
+/* CSS for owner stage here */
+
+/* some single part of this stage have CSSed at the stage before */
+
+.ownerSite {
+    background: url('bg-explore2.jpg') no-repeat;
+    padding: 120px 70px;
+    /* height: 200vh; */
+}
+
+.site1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.ownerAvtImg {
+    overflow: hidden;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+
+}
+
+.ownerAvtImg img {
+    width: 100%;
+}
+
+.ownerAvt {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+
+.OwnerAvtName h4{
+    margin: 60px 0 0 30px;
+    font-size: 20px;
+}
+
+.OwnerAvtName span {
+    font-size: 15px;
+    color: #7453fc;
+}
+
+.ownerStatus {
+    width: 50%;
+    background-color: #282b2f;
+    border: 1px solid #404245;
+    border-radius: 20px;
+    margin-left: 100px;
+    padding: 20px 30px;
+}
+
+.ownerStatus > div{
+   
+}
+
+.statusCard ion-icon {
+    font-size: 20px;
+}
+
+.statusCard {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.statusCard > div > span {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.statusCard > div {
+    font-size: 16px;
+    color: #7453fc;
+    margin-bottom: 20px;
+    width: 33.3333%;
+}
+
+.follow {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.follow > span {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 50%;
+}
+
+.follow > div {
+    width: 50%;
+    height: 46px;
+    border-radius: 23px;
+    background-color: #7453fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.follow > div > span:after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.follow > div:hover {
+    background-color: #fff;
+    color: #7453fc;
+    cursor: pointer;
+}
+
+.ownerProduct {
+    width: 100%;
+}
+
+.site2 {
+    margin: 80px 0;
+}
+
+.ownerProduct {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.ownerProduct:after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 2px;
+    background-color: #7453fc;
+    top: 0;
+    left: 0;
+}
+
+.ownerProduct h2 {
+    margin: 40px 0 70px 0;
+    font-size: 30px;
+}
+
+.op-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
