@@ -18,6 +18,9 @@ item.onclick = function() {
     }
     document.getElementById('item').style.backgroundColor = "#7453fc"; 
     document.getElementById('item').style.color = "#fff";
+
+    window.scrollTo(0, 0);
+
 }
 
 home.onclick = function() {
@@ -37,6 +40,8 @@ home.onclick = function() {
     }
     document.getElementById('home').style.backgroundColor = "#7453fc"; 
     document.getElementById('home').style.color = "#fff";
+
+    window.scrollTo(0, 0);
 }
 
 
@@ -57,6 +62,9 @@ explore.onclick = function() {
     }
     document.getElementById('explore').style.backgroundColor = "#7453fc"; 
     document.getElementById('explore').style.color = "#fff";
+
+    window.scrollTo(0, 0);
+
 }
 
 home.click();
@@ -123,6 +131,8 @@ directToExplore.onclick = function () {
     }
     document.getElementById('explore').style.backgroundColor = "#7453fc"; 
     document.getElementById('explore').style.color = "#fff";
+
+    window.scrollTo(0, 0);
 }
 
 
