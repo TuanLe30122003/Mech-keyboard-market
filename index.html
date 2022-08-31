@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="explore.css">
     <link rel="stylesheet" href="itemDetails.css">
     <link rel="stylesheet" href="owner.css">
+    <link rel="stylesheet" href="purchase.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
 </head>
@@ -27,7 +28,7 @@
                     <li><a href="javascript:void(0)" class="nav-but" id="explore">Explore</a></li>
                     <li><a href="javascript:void(0)" class="nav-but" id="item">Item details</a></li>
                     <li><a href="javascript:void(0)" class="nav-but" id="owner">Owner</a></li>
-                    <li><a href="javascript:void(0)" class="nav-but">Purchase yours</a></li>
+                    <li><a href="javascript:void(0)" class="nav-but" id="create">Purchase yours</a></li>
                 </ul>
             </div>
         </div>
@@ -1108,8 +1109,126 @@
     </div>
 
     <div class="stage" id="purchasestage">
-        
+        <div class="itemDetails">
+            <div class="itemStageIntro">
+                <h4>Mech-keyboard market</h4>
+
+                <h1>VIEW DETAILS OF OWNERS</h1>
+
+                <p><span>Home > </span>Owner</p>
+
+                <div class="directButton">
+                    <div class="directToExplore db"><span>Explore our items</span></div>
+
+                    <div class="db"><span>Create your Keyboard</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="applyForm"> 
+            <div class="formTitle">
+                <h2>Apply for your items</h2>
+            </div>
+
+            <div class="form">
+                <div class="formRow1">
+                    <div>
+                        <label for="input"><span>Item title</span></label>
+                        <input type="text" placeholder="Item title">
+                    </div>
+                    <div>
+                        <label for="input"><span>Description for item</span></label>
+                        <input type="text" placeholder="Description for item">
+                    </div>
+                    <div>
+                        <label for="input"><span>Your username</span></label>
+                        <input type="text" placeholder="Username">
+                    </div>
+                </div>
+
+                <div class="formRow2">
+                    <div>
+                        <label for="input"><span>Price of item</span></label>
+                        <input type="text" placeholder="Price">
+                    </div>
+
+                    <div>
+                        <label for="input"><span>Royalties</span></label>
+                        <input type="text" placeholder="Royalties">
+                    </div>
+                </div>
+
+                <div class="formRow3">
+                    <div>
+                        <label for="input"><span>Royalties</span></label>
+                        <input type="file" placeholder="Royalties">
+                    </div>
+
+                    <div class="row3summit"><span>Summit your Applying</span></div>
+                </div>
+            </div>
+
+            <div class="viewDetail">
+                <div class="headingSection">
+                    <h2>View detail <span>for item</span> Here.</h2>
+                </div>
+
+                <div class="itemInfoCard">
+                    <div class="iD-img">
+                        <img src="itemDetailPic.jpg" alt="">
+                    </div>
+
+                    <div class="iD-des">
+                        <h4>Name of a particular keyboard</h4>
+                        <div class="iD-des-owner">
+                            <span>
+                                <img src="owner.jpg" alt="">
+                            </span>
+
+                            <h6>
+                                Owner Name
+                                <br>
+                                <span>@tagname</span>
+                            </h6>
+                        </div>
+                        <p>This is a brand new keyboard, use modern technology to create the metal case,</p>
+                        <div class="iD-info">
+                            <div class="iD-info-form">
+                                <span>
+                                    Current price:
+                                    <br>
+                                    <br>
+                                    <strong>1000$</strong>
+                                    <br>
+                                    <span>(1200$ after VAT)</span>
+                                </span>
+
+                                <span>
+                                    Current price:
+                                    <br>
+                                    <br>
+                                    <strong>1000$</strong>
+                                    <br>
+                                    <span>(1200$ after VAT)</span>
+                                </span>
+
+                                <span>
+                                    Current price:
+                                    <br>
+                                    <br>
+                                    <strong>1000$</strong>
+                                    <br>
+                                    <span>(1200$ after VAT)</span>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
     </div>
+
+
 </body> 
 
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

@@ -2,6 +2,27 @@ const home = document.querySelector('#home');
 const explore = document.querySelector('#explore');
 const item = document.querySelector('#item');
 const owner = document.querySelector('#owner');
+const create = document.querySelector('#create');
+
+create.onclick = function (e) {
+    var stagee = document.getElementsByClassName('stage');
+
+    for(let i=0; i < stagee.length; i++) {
+        stagee[i].style.display = "none";
+    }
+
+    document.getElementById('purchasestage').style.display = "block";
+
+    var buttonn = document.getElementsByClassName('nav-but');
+    for(let i=0; i < buttonn.length; i++){
+        buttonn[i].style.backgroundColor = "#fff";
+        buttonn[i].style.color = "#7453fc";
+    }
+    document.getElementById('create').style.backgroundColor = "#7453fc"; 
+    document.getElementById('create').style.color = "#fff";
+
+    window.scrollTo(0, 0);
+}
 
 owner.onclick = function(e) {
     var stagee = document.getElementsByClassName('stage');
@@ -168,6 +189,56 @@ for(var i=0; i<contentChoice.length; i++){
         contentSort.innerText = e.target.innerText;
         orderList.classList.add('unable');
         
+    }
+}
+
+const directToCreate = document.querySelectorAll('.c-direct > div');
+
+// console.log(directToCreate);
+
+for(var i=0; i<directToCreate.length; i++){
+    directToCreate[i].onclick = function(e) {
+        var stagee = document.getElementsByClassName('stage');
+    
+        for(let i=0; i < stagee.length; i++) {
+            stagee[i].style.display = "none";
+        }
+    
+        document.getElementById('purchasestage').style.display = "block";
+    
+        var buttonn = document.getElementsByClassName('nav-but');
+        for(let i=0; i < buttonn.length; i++){
+            buttonn[i].style.backgroundColor = "#fff";
+            buttonn[i].style.color = "#7453fc";
+        }
+        document.getElementById('create').style.backgroundColor = "#7453fc"; 
+        document.getElementById('create').style.color = "#fff";
+    
+        window.scrollTo(0, 0);
+    }
+}
+
+const directToCreate2 = document.querySelectorAll('.db');
+
+for(var i=0; i<directToCreate2.length; i++){
+    directToCreate2[i].onclick = function(e) {
+        var stagee = document.getElementsByClassName('stage');
+    
+        for(let i=0; i < stagee.length; i++) {
+            stagee[i].style.display = "none";
+        }
+    
+        document.getElementById('purchasestage').style.display = "block";
+    
+        var buttonn = document.getElementsByClassName('nav-but');
+        for(let i=0; i < buttonn.length; i++){
+            buttonn[i].style.backgroundColor = "#fff";
+            buttonn[i].style.color = "#7453fc";
+        }
+        document.getElementById('create').style.backgroundColor = "#7453fc"; 
+        document.getElementById('create').style.color = "#fff";
+    
+        window.scrollTo(0, 0);
     }
 }
 
