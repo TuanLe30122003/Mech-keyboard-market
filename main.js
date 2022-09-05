@@ -4,6 +4,13 @@ const item = document.querySelector('#item');
 const owner = document.querySelector('#owner');
 const create = document.querySelector('#create');
 
+const openNav = document.querySelector('.button div ion-icon');
+const nav = document.querySelector('.button ul');
+
+document.onclick = function(e) {
+    // nav.style.display = 'none';  
+}
+
 create.onclick = function (e) {
     var stagee = document.getElementsByClassName('stage');
 
@@ -21,6 +28,7 @@ create.onclick = function (e) {
     document.getElementById('create').style.backgroundColor = "#7453fc"; 
     document.getElementById('create').style.color = "#fff";
 
+    // nav.style.display = 'none';
     window.scrollTo(0, 0);
 }
 
@@ -41,6 +49,7 @@ owner.onclick = function(e) {
     document.getElementById('owner').style.backgroundColor = "#7453fc"; 
     document.getElementById('owner').style.color = "#fff";
 
+    // nav.style.display = 'none';
     window.scrollTo(0, 0);
 }
 
@@ -62,6 +71,7 @@ item.onclick = function() {
     document.getElementById('item').style.color = "#fff";
 
     window.scrollTo(0, 0);
+    // nav.style.display = 'none';
 }
 
 home.onclick = function() {
@@ -83,6 +93,8 @@ home.onclick = function() {
     document.getElementById('home').style.color = "#fff";
 
     window.scrollTo(0, 0);
+
+//    nav.style.display = 'none';
 }
 
 
@@ -105,7 +117,7 @@ explore.onclick = function() {
     document.getElementById('explore').style.color = "#fff";
 
     window.scrollTo(0, 0);
-
+    // nav.style.display = 'none';
 }
 
 const cateIcon = document.querySelector('.cate div ion-icon');
@@ -240,6 +252,20 @@ for(var i=0; i<directToCreate2.length; i++){
     
         window.scrollTo(0, 0);
     }
+}
+
+let navstatus = false;
+
+openNav.onclick = function(e) {
+   if(navstatus == false) {
+        nav.style.display = 'flex';
+        navstatus = true;
+   }
+
+   else {
+        nav.style.display = 'none';
+        navstatus = false;
+   }
 }
 
 home.click();

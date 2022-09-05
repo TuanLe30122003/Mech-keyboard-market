@@ -3,7 +3,8 @@
 .applyForm {
     background: url('bg-explore2.jpg') no-repeat;
     /* height: 100vh; */
-    padding: 120px 80px
+    padding: 120px 80px;
+    width: 100%;
 }
 
 label {

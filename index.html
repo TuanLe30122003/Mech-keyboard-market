@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="itemDetails.css">
     <link rel="stylesheet" href="owner.css">
     <link rel="stylesheet" href="purchase.css">
+    <link rel="stylesheet" href="responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
 </head>
@@ -23,7 +24,9 @@
                 <img src="logo.png" alt="">
             </div>
             <div class="button">
-                <ul>
+                <div><ion-icon name="reorder-four-outline"></ion-icon></div>
+
+                <ul class="flex">
                     <li><a href="javascript:void(0)" class="nav-but" id="home">Home</a></li>
                     <li><a href="javascript:void(0)" class="nav-but" id="explore">Explore</a></li>
                     <li><a href="javascript:void(0)" class="nav-but" id="item">Item details</a></li>
@@ -62,90 +65,96 @@
                     <h2>Our product here !</h2>
                 </div>
                 <div class="display-product">
-                    <div class="product-card">
-                        <div class="cover-card">
-                            <div class="card-pic">
-                                <img src="switch.png" alt="">
+                    <div>
+                        <div class="product-card">
+                            <div class="cover-card">
+                                <div class="card-pic">
+                                    <img src="switch.png" alt="">
+                                </div>
+    
+                                <h4>Switchs</h4>
+    
+                                <a href="" class="move">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </a>
                             </div>
-
-                            <h4>Switchs</h4>
-
-                            <a href="" class="move">
-                                <ion-icon name="chevron-forward-outline"></ion-icon>
-                            </a>
+                        </div>
+    
+                        <div class="product-card">
+                            <div class="cover-card">
+                                <div class="card-pic">
+                                    <img src="keycap.png" alt="">
+                                </div>
+    
+                                <h4>Keycap</h4>
+    
+                                <a href="" class="move">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="product-card">
-                        <div class="cover-card">
-                            <div class="card-pic">
-                                <img src="keycap.png" alt="">
+                    <div>
+                        <div class="product-card">
+                            <div class="cover-card">
+                                <div class="card-pic">
+                                    <img src="kit.png" alt="">
+                                </div>
+    
+                                <h4>Keyboard kit</h4>
+    
+                                <a href="" class="move">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </a>
                             </div>
-
-                            <h4>Keycap</h4>
-
-                            <a href="" class="move">
-                                <ion-icon name="chevron-forward-outline"></ion-icon>
-                            </a>
+                        </div>
+    
+                        <div class="product-card">
+                            <div class="cover-card">
+                                <div class="card-pic">
+                                    <img src="stab.png" alt="">
+                                </div>
+    
+                                <h4>Stabilizers</h4>
+    
+                                <a href="" class="move">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="product-card">
-                        <div class="cover-card">
-                            <div class="card-pic">
-                                <img src="kit.png" alt="">
+                    <div>
+                        <div class="product-card">
+                            <div class="cover-card">
+                                <div class="card-pic">
+                                    <img src="custom.png" alt="">
+                                </div>
+    
+                                <h4>Customized keyboard</h4>
+    
+                                <a href="" class="move">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </a>
                             </div>
-
-                            <h4>Keyboard kit</h4>
-
-                            <a href="" class="move">
-                                <ion-icon name="chevron-forward-outline"></ion-icon>
-                            </a>
                         </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="cover-card">
-                            <div class="card-pic">
-                                <img src="stab.png" alt="">
+    
+                        <div class="product-card">
+                            <div class="cover-card">
+                                <div class="card-pic">
+                                    <img src="other.png" alt="">
+                                </div>
+    
+                                <h4>Other things</h4>
+    
+                                <a href="" class="move">
+                                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                                </a>
                             </div>
-
-                            <h4>Stabilizers</h4>
-
-                            <a href="" class="move">
-                                <ion-icon name="chevron-forward-outline"></ion-icon>
-                            </a>
                         </div>
+                    </div>  
                     </div>
-
-                    <div class="product-card">
-                        <div class="cover-card">
-                            <div class="card-pic">
-                                <img src="custom.png" alt="">
-                            </div>
-
-                            <h4>Customized keyboard</h4>
-
-                            <a href="" class="move">
-                                <ion-icon name="chevron-forward-outline"></ion-icon>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="cover-card">
-                            <div class="card-pic">
-                                <img src="other.png" alt="">
-                            </div>
-
-                            <h4>Other things</h4>
-
-                            <a href="" class="move">
-                                <ion-icon name="chevron-forward-outline"></ion-icon>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="collection">
                     <div class="section-heading">
@@ -154,7 +163,7 @@
     <!-- -------------------------------- -->
                     <div class="collection-layout">
                         <div class="previous"><ion-icon name="chevron-back-outline"></ion-icon></div>
-                        <div class="collection-card">
+                        <div class="collection-card">   
                             <div class="collection-pic">
                                 <img src="collection1.png" alt="">
                                 <!-- 325x256 -->
@@ -177,7 +186,7 @@
                             </div>
                         </div>
     <!-- -------------------------------- -->
-                        <div class="collection-card">
+                        <div class="collection-card">       
                             <div class="collection-pic">
                                 <img src="collection2.jpg" alt="">
                                 <!-- 325x256 -->
@@ -332,7 +341,7 @@
                                 <li>Type 1</li>
                                 <li>Type 2</li>
                                 <li>Type 3</li>
-                            </ul>
+                            </ul>   
                         </div>
 
                         <div class="summit">
@@ -481,7 +490,7 @@
     
                             <div class="col-price">
                                 <div class="line"></div>
-                                <div>
+                                <div>   
                                     <span>
                                         Price:
                                         <br>
@@ -920,129 +929,133 @@
                 <div class="ownerProduct">
                     <h2>His/her items</h2>
                     <div class="op-list">
-                        <div class="coverBox">
-                            <div class="box">
-                                <div class="box-img">
-                                    <img src="item-pic1.jpg" alt="">
-                                    <h4>Item Name example</h4>
-                                </div>
-    
-                                <div class="avatar">
-                                    <img src="owner.jpg" alt="">
-                                </div>
+                        <div>
+                            <div class="coverBox">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="item-pic1.jpg" alt="">
+                                        <h4>Item Name example</h4>
+                                    </div>
         
-                                <div class="col-price">
-                                    <div class="line"></div>
-                                    <div>
-                                        <span>
-                                            Price:
-                                            <br>
-                                            <strong>100$</strong>
-                                        </span>
-    
-                                        <span>
-                                            Price:
-                                            <br>
-                                            <strong>100$</strong>
-                                        </span>
+                                    <div class="avatar">
+                                        <img src="owner.jpg" alt="">
+                                    </div>
+            
+                                    <div class="col-price">
+                                        <div class="line"></div>
+                                        <div>
+                                            <span>
+                                                Price:
+                                                <br>
+                                                <strong>100$</strong>
+                                            </span>
+        
+                                            <span>
+                                                Price:
+                                                <br>
+                                                <strong>100$</strong>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
+        
+                                <div class="boxButton"><div>View detials</div></div>
                             </div>
-    
-                            <div class="boxButton"><div>View detials</div></div>
+                            <div class="coverBox">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="item-pic1.jpg" alt="">
+                                        <h4>Item Name example</h4>
+                                    </div>
+        
+                                    <div class="avatar">
+                                        <img src="owner.jpg" alt="">
+                                    </div>
+            
+                                    <div class="col-price">
+                                        <div class="line"></div>
+                                        <div>
+                                            <span>
+                                                Price:
+                                                <br>
+                                                <strong>100$</strong>
+                                            </span>
+        
+                                            <span>
+                                                Price:
+                                                <br>
+                                                <strong>100$</strong>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="boxButton"><div>View detials</div></div>
+                            </div>
                         </div>
-                        <div class="coverBox">
-                            <div class="box">
-                                <div class="box-img">
-                                    <img src="item-pic1.jpg" alt="">
-                                    <h4>Item Name example</h4>
-                                </div>
-    
-                                <div class="avatar">
-                                    <img src="owner.jpg" alt="">
-                                </div>
+                        <div>
+                                <div class="coverBox">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="item-pic1.jpg" alt="">
+                                        <h4>Item Name example</h4>
+                                    </div>
         
-                                <div class="col-price">
-                                    <div class="line"></div>
-                                    <div>
-                                        <span>
-                                            Price:
-                                            <br>
-                                            <strong>100$</strong>
-                                        </span>
-    
-                                        <span>
-                                            Price:
-                                            <br>
-                                            <strong>100$</strong>
-                                        </span>
+                                    <div class="avatar">
+                                        <img src="owner.jpg" alt="">
+                                    </div>
+            
+                                    <div class="col-price">
+                                        <div class="line"></div>
+                                        <div>
+                                            <span>
+                                                Price:
+                                                <br>
+                                                <strong>100$</strong>
+                                            </span>
+        
+                                            <span>
+                                                Price:
+                                                <br>
+                                                <strong>100$</strong>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-    
-                            <div class="boxButton"><div>View detials</div></div>
-                        </div>
-                        <div class="coverBox">
-                            <div class="box">
-                                <div class="box-img">
-                                    <img src="item-pic1.jpg" alt="">
-                                    <h4>Item Name example</h4>
-                                </div>
-    
-                                <div class="avatar">
-                                    <img src="owner.jpg" alt="">
-                                </div>
         
-                                <div class="col-price">
-                                    <div class="line"></div>
-                                    <div>
-                                        <span>
-                                            Price:
-                                            <br>
-                                            <strong>100$</strong>
-                                        </span>
-    
-                                        <span>
-                                            Price:
-                                            <br>
-                                            <strong>100$</strong>
-                                        </span>
+                                <div class="boxButton"><div>View detials</div></div>
+                            </div>
+                            <div class="coverBox">
+                                <div class="box">
+                                    <div class="box-img">
+                                        <img src="item-pic1.jpg" alt="">
+                                        <h4>Item Name example</h4>
+                                    </div>
+        
+                                    <div class="avatar">
+                                        <img src="owner.jpg" alt="">
+                                    </div>
+            
+                                    <div class="col-price">
+                                        <div class="line"></div>
+                                        <div>
+                                            <span>
+                                                Price:
+                                                <br>
+                                                <strong>100$</strong>
+                                            </span>
+        
+                                            <span>
+                                                Price:
+                                                <br>
+                                                <strong>100$</strong>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-    
-                            <div class="boxButton"><div>View detials</div></div>
-                        </div>
-                        <div class="coverBox">
-                            <div class="box">
-                                <div class="box-img">
-                                    <img src="item-pic1.jpg" alt="">
-                                    <h4>Item Name example</h4>
-                                </div>
-    
-                                <div class="avatar">
-                                    <img src="owner.jpg" alt="">
-                                </div>
         
-                                <div class="col-price">
-                                    <div class="line"></div>
-                                    <div>
-                                        <span>
-                                            Price:
-                                            <br>
-                                            <strong>100$</strong>
-                                        </span>
-    
-                                        <span>
-                                            Price:
-                                            <br>
-                                            <strong>100$</strong>
-                                        </span>
-                                    </div>
-                                </div>
+                                <div class="boxButton"><div>View detials</div></div>
                             </div>
-    
-                            <div class="boxButton"><div>View detials</div></div>
                         </div>
                     </div>
                 </div>
@@ -1107,6 +1120,8 @@
             </div>
         </div>
     </div>
+
+<!---------------- PURCHASE STAGE ------------------------->
 
     <div class="stage" id="purchasestage">
         <div class="itemDetails">

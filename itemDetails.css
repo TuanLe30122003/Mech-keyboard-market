@@ -1,9 +1,10 @@
 .itemDetails {
-    background: url('bg-explore.jpg') no-repeat ;
+    background: url('bg-explore.jpg');
     min-height: 70vh;
     width: 100%;
     color: #fff;
     position: relative;
+    height: 110vh;
 }
 
 #itemstage {
@@ -15,7 +16,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -50% );
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,6 +30,7 @@
 
 .itemStageIntro h1 {
     font-size: 50px;
+    text-align: center;
 }
 
 .itemDetails p {

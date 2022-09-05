@@ -5,16 +5,18 @@
 #explorestage {
     z-index: 4;
     display: none;
+    width: 100%;
+    /* overflow-x: hidden   ; */
 }
 
 .discover {
-    background: url('bg-explore.jpg') no-repeat;
-    /* height: 200vh; */
-    padding-top: 250px;
+    background: url('bg-explore.jpg');
+    height: 150vh;
+    padding-top: 275px;
     /* width: 100vw; */
+    width: 100%;
+    position: relative;
 }
-
-
 
 .namedirect {
     width: 100%;
@@ -126,11 +128,16 @@
 /* explore2 */
 
 .discover2 {
-    background: url('bg-explore2.jpg') no-repeat    ;
+    background: url('bg-explore2.jpg') no-repeat;
+    background-size: cover;
     /* height: 200vh; */
-    padding: 400px 0 120px 0;
+    padding: 200px 0 120px 0;
+    width: 100%;
     position: relative;
     transform: translateY(-17%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* box-sizing: content-box; */
 }
 
@@ -151,10 +158,12 @@
 /* searching */
 
 .searching {
+    width: 100%;
     display: flex;
     flex-direction: row;
     /* padding: 0 30px; */
-    /* max-width: 1140px; */
+    max-width: 1140px;
+    justify-content: center;
     margin: 0 70px;
     padding: 0 12px;
 }
@@ -168,7 +177,7 @@
     font-size: 27px;
     margin-bottom: 80px;
     font-weight: 700;
-    flex-basis: 50%;
+    flex-basis: 0%;
     justify-content: left;
     text-align: left;
 }
@@ -180,6 +189,7 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    flex-basis: 70%;
 }
 
 .searching2 > div{

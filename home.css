@@ -28,6 +28,7 @@ a {
 
 body {
     position: relative;
+    width: 100%;
 }
 
 input {
@@ -46,6 +47,14 @@ input {
     color: #fff;
 }
 
+.flex {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+
 /* Global css */
 /* ---------------------------------------------------------------- */
 
@@ -53,11 +62,10 @@ input {
 
 .intro {
     width: 100%;
-    height: 100vh;
+    height: 125vh;
     background: url('banner1.1.jpg') no-repeat center;
     /* position: relative; */
-    padding: 0 12rem;
-
+    /* padding: 0 12rem; */
 }
 
 .stage {
@@ -115,12 +123,31 @@ body header {
 }
 
 .button ul {
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     gap: 15px;
     margin-top: 5px;
     justify-content: flex-end;
     align-items: center;
+}
+
+.button div {
+    font-size: 30px;
+    height: 100%;
+    display: none;
+    justify-content: right;
+    align-items: center;
+    flex-basis: 10%;
+    width: 100%;
+}
+
+.button div ion-icon {
+    width: 10%;
+    /* text-align: right; */
+}
+
+.button div ion-icon:hover {
+    cursor: pointer;
 }
 
 .button ul li {
@@ -129,6 +156,8 @@ body header {
     height: 50px;
     display: flex;
     align-items: center;
+    text-align: center  ;
+    /* width: 20%; */
 }
 
 .purple {
@@ -229,12 +258,16 @@ body header {
     overflow: hidden;
     padding: 0 12px;
     margin-left: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner img {
     width: 100%;
+    min-width: 300px;
+    max-width: 500px;
     border-radius: 50px;
-
 }
 
 /* ------------------------------------------------------------ */
@@ -286,6 +319,14 @@ body header {
     display: flex;
     flex-direction: row;
     width: 70%;
+    justify-content: center;
+
+}
+
+.display-product > div {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 33.3333%;
 }
 
 
@@ -303,7 +344,7 @@ body header {
 
 .product-card {
     padding: 0 12px;
-    flex-basis: 16.67%;
+    flex-basis: 50%;
 }
 
 .card-pic {
@@ -375,17 +416,24 @@ body header {
     justify-content: center;
     align-items: center;
     gap: 45px;
-    position: relative;
 }
 
 .collection-card {
     border-radius: 25px;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 325px;
+    position: relative;
+}
+
+.collection-pic {
+    overflow: hidden;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
 }
 
 .collection-pic img {
     display: block;
+    height: 100%;
 }
 
 .des-collection {
@@ -394,6 +442,7 @@ body header {
     border: 1px solid #404245;  
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
+    height: 200px;
 }
 
 .des-collection h4 {
@@ -401,7 +450,7 @@ body header {
     padding-bottom: 20px;
     font-size: 20px;
     border-bottom: 1px solid rgba(255,255,255,0.2);
-    position: relative;
+    /* position: relative; */
 }
 
 .under {
@@ -492,6 +541,7 @@ body header {
     justify-content: center;
     align-items: center;
     transition: all 0.4s;
+    z-index: 5;
 }
 
 .next:hover {
